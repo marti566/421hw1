@@ -11,9 +11,14 @@ Driver::~Driver()
 {
     //does nothing currently
 }
-void Driver::recGen(int iterations, string base)
+void Driver::recGen(int UserIterations, string base, string userAlphabet)
 {
-    //
+    //starts the process of generating all of the strings in the alphabet
+    pthread_attr_t attr;
+    pthread_attr_init(&attr);
+    pthread_t tid[2];
+    iterations = UserIterations;
+
 }
 void Driver::interactiveRec()
 {

@@ -7,13 +7,17 @@
 #include "recognizer.h"
 
 using namespace std;
+struct genArgs
+{
+
+};
 
 class Driver
 {
 public:
     Driver();
     ~Driver();
-    void recGen(int iterations, string base);
+    void recGen(int UserIterations, string base, string userAlphabet);
     void interactiveRec();
 protected:
     //thread runner memberfucntions
@@ -22,6 +26,9 @@ protected:
     //generator and recognzier members
     Generator gen;
     Recognizer rec;
-
+    string Alphabet;
+    int iterations;
+    pthread_mutex_t editTasks;
+    vector<string> checkQueue;
 };
 #endif
