@@ -1,18 +1,20 @@
 #include "generator.h"
 
-generator::generator()
+Generator::Generator()
 {
     //does nothing now
 }
-generator::~generator()
+Generator::~Generator()
 {
     //does nothing now
 }
-void generator::genFromBase(string base,vector<char> Alphabet, vector<string>* strings, int* numbIterations, int* currentIteration)
+void Generator::genFromBase(string base, vector<char> Alphabet, vector<string>* strings)
 {
+    
     //begins recoursion
 }
-void generator::genFromBaseRecoursion(string base, vector<char> Alphabet, vector<string>* strings, int* numbIterations, int* currentIterations)
+void Generator::genFromBaseRecoursion(string base, vector<char> Alphabet, vector<string>* strings)
 {
+    
     //recoursively adds strings to list of strings
 }

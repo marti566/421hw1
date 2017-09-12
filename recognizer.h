@@ -5,12 +5,12 @@
 
 using namespace std;
 
-class recognizer
+class Recognizer
 {
 public:
 
-    recognizer();
-    ~recognizer();
+    Recognizer();
+    ~Recognizer();
     bool inlang(string target);
 protected:
 };

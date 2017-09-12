@@ -1,9 +1,7 @@
 #include <iostream>
 #include <pthread.h>
 #include <string>
-#include "recognizer.h"
-#include "generator.h"
-
+#include "driver.h"
 
 using namespace std;
 
@@ -11,6 +9,7 @@ int main(int argc, char** argv)
 {
     string userInput = argv[1];
     bool recGen = false;
+    Driver driver;
 
     if(argc != 2)
     {

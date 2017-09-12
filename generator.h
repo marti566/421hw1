@@ -5,15 +5,17 @@
 #include <iostream>
 using namespace std;
 
-class generator
+class Generator
 {
 public:
-    generator();
-    ~generator();
-    void genFromBase(string base,vector<char> Alphabet, vector<string>* strings, int* numbIterations, int* currentIteration);
-    void genFromBaseRecoursion(string base, vector<char> Alphabet, vector<string>* strings, int* numbIterations, int* currentIterations);
+    Generator();
+    ~Generator();
+    void genFromBase(string base,vector<char> Alphabet, vector<string>* strings);
+    void genFromBaseRecoursion(string base, vector<char> Alphabet, vector<string>* strings);
 protected:
-    
+    int numbIterations;
+    int currentIteration;
+
 };
 
 
